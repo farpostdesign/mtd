@@ -7,7 +7,8 @@
     "jade": ">= 0.0.1",
     "jquery": "",
     "pixi.js": "",
-    "socket.io": "^1.3.3"
+    "socket.io": "^1.3.3",
+    "morgan": ""
   },
   "devDependencies": {
     "grunt": "~0.4.5",
