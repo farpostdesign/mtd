@@ -32,10 +32,10 @@ app.configure('production', function(){
 
 app.get('/', routes.index)
 
-app.listen(3000, function(){
-  console.log("Express server listening on port %d in %s mode", app.address().port, app.settings.env)
+app.listen(3000, function() {
+  console.log("Express server listening on port %d in %s mode", app.address().port, app.settings.env);
 })
 
-var Core = require('./game/core')
-var core = new Core(io)
-core.start()
+var Core = require('./game/core');
+var core = new Core(io);
+core.start();

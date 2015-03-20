@@ -1,15 +1,27 @@
-var Map = require('./map')
+var Map = require('./map');
+
+var FPS = 30;
 
 var Game = function(io) {
-  var $game = this
+  var $game = this;
+  this.users = [];
+  this.waiting = true;
 
+  // Игра в режиме ожидания второго игрока?
+  this.is_waiting = function() {
+    return $game.waiting;
+  }
+
+  // Функция основного цикла игры
   this.loop = function() {
 
   }
 
   this.start = function() {
-    setInterval($core.loop, 33)
+    console.log('Game starting...');
+    setInterval($game.loop, 1000 / FPS);
+    console.log('Game started');
   }
 }
 
-module.exports = Game
+module.exports = Game;
