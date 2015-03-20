@@ -3,12 +3,14 @@
  * Module dependencies.
  */
 
-var express = require('express');
-var routes = require(__dirname + '/routes/router')(express);
+var express = require('express'),
+    logger = require('morgan'),
+    routes = require(__dirname + '/routes/router')(express);
 
 var app = express();
 
 // Configuration
+app.use(logger('common'));
 app.set('env', process.env.MODE || 'development');
 app.set('port', process.env.PORT || 3000);
 app.set('views', __dirname + '/views');
