@@ -11,7 +11,7 @@ var Core = function(io) {
       // Отправляем клиентам сообщение о подключении нового игрока
       io.emit('new_user', JSON.stringify({ message: message('new_user_connected') }));
 
-      socket.on('disconnect', function() { return message('user_disconnected') });
+      socket.on('disconnect', function() { console.log(message('user_disconnected')) });
     });
     console.log('Core: socketio initialized');
   }
