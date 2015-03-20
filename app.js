@@ -22,8 +22,9 @@ var server = app.listen(app.get('port'), function() {
     console.log("Express server listening on port " + app.get('port'));
 });
 
+
 var io = require('socket.io').listen(server);
 
-//var Game = require('./game/game')
-//var game = new Game(io)
-//game.start()
+var Core = require('./game/core');
+var core = new Core(io);
+core.start();
