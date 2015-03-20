@@ -1,7 +1,7 @@
 var Field = function() {
-    this.type = function() {
-        // Тип поля 1 - обычное поле
-        return 1;
+    this.get_type = function() {
+        // Тип поля 0 - обычное поле
+        return 0;
     }
 }
 

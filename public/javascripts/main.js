@@ -1,1 +1,1 @@
-io()
+io().on('send_map', function(msg) { alert(msg) });
