@@ -1,0 +1,10 @@
+doctype
+html
+  head
+    title= title
+    link(rel='stylesheet', href='/stylesheets/style.css')
+  body!= body
+  footer
+    script(src='/socket.io/socket.io.js', type='text/javascript')
+    script(src='/javascripts/compiled.js', type='text/javascript')
+    script(src='/javascripts/main.js', type='text/javascript')
