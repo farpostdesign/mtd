@@ -1,7 +1,6 @@
 {
   "name": "farpostdesign-mtd",
-  "version": "0.0.3",
-  "private": true,
+  "version": "0.0.4",
   "scripts": {
     "start": "NODE_PATH=lib node app.js",
     "test": "node_modules/.bin/mocha -R spec -b -t 30000 test/test.js"
