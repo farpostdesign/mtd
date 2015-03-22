@@ -1,5 +1,5 @@
 # App specific
-public/javascripts/compiled.js
+public/vendor
 
 # Logs
 logs
