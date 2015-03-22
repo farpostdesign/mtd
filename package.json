@@ -1,8 +1,9 @@
 {
   "name": "application-name",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "private": true,
   "scripts": {
+    "start": "NODE_PATH=lib node app.js",
     "test": "node_modules/.bin/mocha -R spec -b -t 30000 test/test.js"
   },
   "dependencies": {
