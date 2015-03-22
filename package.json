@@ -1,8 +1,8 @@
 {
   "name": "farpostdesign-mtd",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "scripts": {
-    "start": "NODE_PATH=lib node app.js",
+    "start": "DEBUG=mdt* NODE_PATH=lib node app.js",
     "test": "NODE_PATH=lib node_modules/.bin/mocha -R spec -b -t 30000 test/test.js",
     "postinstall": "mkdir -p public/vendor && cp node_modules/pixi.js/bin/pixi.{js,js.map} public/vendor"
   },
