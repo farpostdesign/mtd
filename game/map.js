@@ -1,13 +1,12 @@
-var Field = require('./field');
+var Field = require('./field'),
+    Matrix = require('../lib/matrix');
+
+
 
 var Map = function() {
-  var map = [];
-
-  for(i = 0; i < 11; ++i) {
-    for(j = 0; j < 5; ++j) {
-      map[i][j] = new Field();
-    }
-  }
+    return Matrix(11, 5, new Field());
 }
+
+
 
 module.exports = Map;
