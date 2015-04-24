@@ -3,4 +3,5 @@ describe('Tests', function() {
   require('./field_test');
   require('./map_test');
   require('./matrix_test');
+  require('./game_test');
 });
